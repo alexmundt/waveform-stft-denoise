@@ -8,6 +8,24 @@ from ipywidgets import interact
 from tqdm import tqdm
 
 class StftDataset(object):
+    """ A class to represent the STFT 
+    processed datasets.
+        Attributes
+    ----------
+    data : np.array
+        STFT numpy array containing the processed files
+        
+    t : times of the STFT
+    f : frequency bins of the STFT
+
+    Methods
+    -------
+    process_data(data):
+        data : np.array of waveforms
+        
+        processes the waveform into STFT form,
+        stores the parameters of the STFT
+    """
     def __init__(self, data=None, fs = 1./5.):
         """ initialize
         """
