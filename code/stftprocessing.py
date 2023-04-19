@@ -28,11 +28,13 @@ class StftDataset(object):
         
     save(folder, name):
         saves the data in the given folder under
-        the given name
+        the given name in a format used for
+        the STFT dataclass
         
     load(folder, name):
         loads the data from the folder stored
-        under the given name
+        under the given name in a format used for
+        the STFT dataclass
     
     """
     def __init__(self, data=None, fs = 1./5.):
