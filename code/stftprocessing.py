@@ -25,6 +25,15 @@ class StftDataset(object):
         
         processes the waveform into STFT form,
         stores the parameters of the STFT
+        
+    save(folder, name):
+        saves the data in the given folder under
+        the given name
+        
+    load(folder, name):
+        loads the data from the folder stored
+        under the given name
+    
     """
     def __init__(self, data=None, fs = 1./5.):
         """ initialize
